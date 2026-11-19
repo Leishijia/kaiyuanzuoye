@@ -74,3 +74,14 @@ python scripts/chart.py
 3. `ValueError: did not find any 'pre_scan' hooks` → pip 装了 pluggy 1.x，与 plugincode 不兼容，
    降级 `pluggy==0.13.1` 解决。
 4. 首次运行需装载许可证知识库（3.02 s）；单进程约 8 分钟，`--processes 4` 后降至 153 s。
+
+## 文件校验（SHA-256）
+
+下载后可用 `sha256sum <文件>` 核对，确认与本次提交的版本一致：
+
+| 文件 | SHA-256 |
+| --- | --- |
+| `f250117-f25011506-雷施佳-作业1.docx` | `e1f078b8c0e9f9c935ed512a96dba1150bdedb3152b33034103769a90c39df01` |
+| `f250117-f25011506-雷施佳-作业1.pdf` | `86b1073639bef965c15ca5fbb306b7f839ff77865ccb289df5bca5e85cd634bb` |
+| `scan/scan.json` | `628d3176183011c3cc578835f631a3b5a150ba12aed80c4cd3155ea894a620e2` |
+| `scan/scan_report.html` | `178ea83860d5fa804ee809a0e172e1ef6a6f396cf4dfa153c1dec3aaf8c323e7` |
